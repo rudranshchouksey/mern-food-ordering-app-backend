@@ -1,7 +1,8 @@
 import mongoose from "mongoose";
+import { Types } from "mongoose";
 
 const userSchema = new mongoose.Schema({
-  _id: ObjectId,
+  _id: Types.ObjectId,
   auth0Id: {
     type: String,
     required: true,
